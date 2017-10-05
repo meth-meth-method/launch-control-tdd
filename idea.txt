@@ -1,0 +1,22 @@
+Create an application that simulates a connection to a Nuclear Launch Faciltiy.
+
+Create a funny interface that visualize what happens and create a function that
+
+* Sets up a connection to launch facility that arms it using a password.
+    * If password correct resolves an API interface.
+    * If password incorrect it rejects.
+
+API interface contains
+* launch method
+* disarm method
+
+Launching
+* Starts a countdown.
+* Returns a secret and a cancel method.
+
+* Disarm returns original state.
+
+Cancel method
+* When called with correct secret, cancels launch and resets countdown.
+* When called with incorrect secret, counts down amount of tries.
+
